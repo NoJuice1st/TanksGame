@@ -63,6 +63,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93e26ff1e1444b849b02dbf056b63b8e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8834599662456316236}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93e26ff1e1444b849b02dbf056b63b8e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7493327347742199866}
   m_SourcePrefab: {fileID: 100100000, guid: 93e26ff1e1444b849b02dbf056b63b8e, type: 3}
 --- !u!1 &2173462345236827963 stripped
 GameObject:
@@ -92,3 +95,22 @@ CapsuleCollider:
   m_Height: 7.784927
   m_Direction: 1
   m_Center: {x: 0, y: 3.8940136, z: 0}
+--- !u!114 &7493327347742199866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2173462345236827963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42690e0278a8de44b8efba56ea2a5f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 598966949756623466, guid: 27561249a0e6e0645914831ac01c1b2a, type: 3}
+  explosiveObject: {fileID: 3136337751820535194, guid: b3783942de020b7489795ad823deb89d, type: 3}
+  explosionMark: {fileID: 8139624178347664454, guid: e3f12c465121a994597261cb4ec3f8b7, type: 3}
+  hp: 2
+  particleCount: 5
+  autoDestroy: 1
+  maxParticleSize: 1
