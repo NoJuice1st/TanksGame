@@ -11,15 +11,16 @@ public class Tank : MonoBehaviour
     public string horizontalAxis;
     public KeyCode shootKey;
 
+    private AudioSource movementSound;
     public GameObject bullet;
     public Transform shootPoint;
-    private AudioSource firingSound;
     private Rigidbody rb;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        firingSound = GetComponent<AudioSource>();
+        movementSound = GetComponent<AudioSource>();
+       
     }
     private void Update()
     {
@@ -31,12 +32,21 @@ public class Tank : MonoBehaviour
 
         rb.velocity = transform.forward * vert * speed;
 
+        if (rb.velocity == Vector3.zero)
+        {
+            movementSound.Pause();
+        }
+        else
+        {
+            movementSound.UnPause();
+        }
+
 
 
         if (Input.GetKeyDown(shootKey))
         {
             Instantiate(bullet, shootPoint.position, shootPoint.rotation);
-            firingSound.Play();
+            //movementSound.Play();
         }
     }
 }

@@ -49,11 +49,11 @@ public class Health : MonoBehaviour
     /*public void FadeAway(GameObject other)
     {
         var materialColor = other.gameObject.GetComponent<MeshRenderer>().material.color;
-        float alpha = 1;
-        while(alpha !<= 0)
+        Color colour = materialColor;
+        while(colour.a !<= 0)
         {
-            alpha -= 0.1f;
-            materialColor.a = alpha;
+            colour.a -= 0.1f;
+            other.gameObject.GetComponent<MeshRenderer>().material.color = colour;
         }
     }*/
 }

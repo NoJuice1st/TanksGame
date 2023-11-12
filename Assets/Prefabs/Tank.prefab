@@ -43,8 +43,8 @@ GameObject:
   - component: {fileID: 7052240721810113185}
   - component: {fileID: 6406247266675052642}
   - component: {fileID: 1444711930432119218}
-  - component: {fileID: 7063612062164402823}
   - component: {fileID: 7146442100937334827}
+  - component: {fileID: 8154046611580631924}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Destructable
@@ -135,7 +135,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!82 &7063612062164402823
+--- !u!114 &7146442100937334827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6692750037091123585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42690e0278a8de44b8efba56ea2a5f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particle: {fileID: 598966949756623466, guid: 8a557154110695a42af70c0e80f5ccc7, type: 3}
+  explosiveObject: {fileID: 3136337751820535194, guid: b3783942de020b7489795ad823deb89d, type: 3}
+  explosionMark: {fileID: 8139624178347664454, guid: e3f12c465121a994597261cb4ec3f8b7, type: 3}
+  hp: 5
+  particleCount: 10
+  autoDestroy: 0
+  maxParticleSize: 0.2
+--- !u!82 &8154046611580631924
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,11 +164,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 54d36b2aacfac8d49a63005e2f663d02, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: b8fac7875fea66f45bf2cd92ad52cc31, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.155
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -231,25 +250,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7146442100937334827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6692750037091123585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42690e0278a8de44b8efba56ea2a5f35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particle: {fileID: 598966949756623466, guid: 8a557154110695a42af70c0e80f5ccc7, type: 3}
-  explosiveObject: {fileID: 3136337751820535194, guid: b3783942de020b7489795ad823deb89d, type: 3}
-  explosionMark: {fileID: 8139624178347664454, guid: e3f12c465121a994597261cb4ec3f8b7, type: 3}
-  hp: 5
-  particleCount: 10
-  autoDestroy: 0
-  maxParticleSize: 0.2
 --- !u!1001 &2587169121766768735
 PrefabInstance:
   m_ObjectHideFlags: 0

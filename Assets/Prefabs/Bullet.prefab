@@ -119,11 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07325e459104994dae4a8e3c4600ff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 598966949756623466, guid: 27561249a0e6e0645914831ac01c1b2a, type: 3}
-  explosionMark: {fileID: 8139624178347664454, guid: e3f12c465121a994597261cb4ec3f8b7, type: 3}
   speed: 20
-  particleCount: 10
-  explosiveObject: {fileID: 3136337751820535194, guid: b3783942de020b7489795ad823deb89d, type: 3}
+  shoot: {fileID: 3136337751820535194, guid: 41bfa81add008fb4b8803bedff656f7e, type: 3}
 --- !u!54 &-3043754987024263647
 Rigidbody:
   m_ObjectHideFlags: 0
